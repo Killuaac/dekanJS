@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Игра</title>
+<link rel="stylesheet" href="./style.css">
+<style>
+
+
+</style>
+</head>
+<body>
+
+<div id="login-screen">
+  <h2>Экран входа</h2>
+  <label for="username">Введите свое имя:</label>
+  <input type="text" id="username">
+  <button onclick="startGame()">Начать игру</button>
+</div>
+
+<div id="game-screen" style="display:none;">
+  <h2>Игровой экран</h2>
+  <p>Имя: <span id="player-name"></span></p>
+  <p>Текущее время: <span id="current-time"></span></p>
+  <p>Время игры: <span id="game-time"></span></p>
+  <p>Жизни: <span id="lives">5</span></p>
+  <p>Время до появления новых монстров: <span id="timer"></span> сек.</p>
+  <canvas id="game-canvas" width="1200" height="1200"></canvas>
+  <button onclick="togglePause()">Пауза (ESC)</button>
+</div>
+
+<div id="results-screen" style="display:none;">
+  <h2>Экран с результатами</h2>
+  <p>Время игры: <span id="result-time"></span></p>
+  <p>Количество монстров: <span id="result-monsters"></span></p>
+  <p>Количество ловушек: <span id="result-traps"></span></p>
+  <p>Осталось жизней: <span id="result-lives"></span></p>
+  <button onclick="restartGame()">Играть сначала</button>
+</div>
+<script defer src="./main.js">lolo</script>
+</body>
+</html>
